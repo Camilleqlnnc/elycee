@@ -4,8 +4,8 @@
 {% block class %}public-window contact{% endblock %}
 {% block body %}
 	<div class="centered">
-		<p>Collège Saint-Paul-le-Jeune</p><p>tel: 04 75 39 00 25</p>
-		<p>Lycée Saint-Paul-le-Jeune</p><p>tel: 04 75 39 80 14</p>
+		<p>Collège Saint-Paul-le-Jeune<br>tel: 04 75 39 00 25</p>
+		<p>Lycée Saint-Paul-le-Jeune<br>tel: 04 75 39 80 14</p>
 		<p>Adresse : 5, place de l'Eglise 07460 Saint-Paul-le-Jeune</p>
 	</div>
 	<form class="form-contact form-validate" data-ajax="true" method="POST" action="" novalidate="novalidate">
@@ -19,7 +19,7 @@
 			<br>
 			<input type="hidden" name="random1" id="random1" value="{{ random1 }}" class="form-control">
 			<input type="hidden" name="random2" id="random2" value="{{ random2 }}" class="form-control">
-			<input type="text" name="random" id="random" class="form-control" required data-error="anti-robot" placeholder="Si vous n'êtes pas un robot, calculez {{ random1 }} + {{ random2 }} = ">
+			<input type="text" name="random" id="random" class="form-control" required data-error="anti-robot" placeholder="{{ random1 }} + {{ random2 }} = ">
 			<br>
 			<button class="btn btn-theme btn-block" type="submit" ><i class="fa fa-paper-plane-o"></i></button>
 			<hr>

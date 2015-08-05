@@ -74,7 +74,6 @@
 }
 
 @mixin bg-sprite($url, $position, $bgsize){
-
     background-image: url('../images/' + $url + '.png');
     background-repeat: no-repeat;
     background-position: $position;
@@ -89,7 +88,6 @@
             background-size: $bgsize + px;
         }
     }
-
 }
 @mixin transition($property, $duration, $timing-function, $delay){
     -webkit-transition: $property $duration $timing-function $delay;

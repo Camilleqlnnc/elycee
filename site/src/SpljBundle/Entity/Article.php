@@ -80,7 +80,7 @@ class Article
 
     protected function getUploadRootDir()
     {
-        return __DIR__.'/../../../../site/web/bundles/splj/img'.$this->getUploadDir();
+        return __DIR__.'/../../../web/bundles/splj/img'.$this->getUploadDir();
     }
 
     protected function getUploadDir()

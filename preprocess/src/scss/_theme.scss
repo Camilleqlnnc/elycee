@@ -815,6 +815,9 @@ ul.top-menu > li > a {
     .box0 {
         box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
     }
+    .wrapper{
+        padding: 0;
+    }
 }
 
 /* MAIN CHART CONFIGURATION */
@@ -1763,13 +1766,6 @@ label {
 .round-form {
 	border-radius: 500px;
 	-webkit-border-radius: 500px;
-}
-
-@media (min-width: 768px) {
-		.form-horizontal .control-label {
-		text-align: left;
-        font-size: 14px;
-	}
 }
 
 #focusedInput {

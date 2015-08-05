@@ -67,7 +67,6 @@
 				max-width: 720px;
 				margin: 0 auto;
 				img{
-					max-width: 720px;
 					padding: 15px 20px;
 				}
 			}
@@ -89,6 +88,15 @@
 			.centered, .form-contact{
 				display: block;
 				width: 100%;
+			}
+		}
+	}
+}
+@media screen and(max-width: 640px){
+	.public-window{
+		&.search-module{
+			form{
+				max-width: 80%;
 			}
 		}
 	}
