@@ -14,7 +14,7 @@ form{
 }
 .wrap-logo{
 	display: inline-block;
-	padding: 10px 0;
+	padding: 12px 0;
 	text-align: center;
 	width: 90%;
 	strong,img{
@@ -25,14 +25,14 @@ form{
 		font-size: 28px;
 	    margin-top: 15px;
 		position: relative;
-		height: 45px;
+		height: 42px;
 		display: inline-block;
 	    span.logo{
 		    @include bg-sprite(logo_60,center,60);
 		    width: 60px;
 		    height: 60px;
 			position: absolute;
-			top: -14px;
+			top: -16px;
 			left: -75px;
 			.dashboard &{
 		    	@include bg-sprite(logo_60_grey,center,60);
@@ -157,6 +157,12 @@ textarea{
 		}
 		strong{
 			display: none;
+		}
+		a.logo{
+			span.logo{
+				left: 50%;
+				margin-left: -42px;
+			}
 		}
 	}
 	.top-menu{

@@ -21,7 +21,8 @@
 			figure+div{
 				@include inlineblock(middle);
 				font-size: 14px;
-				width: 59%;
+				width: 60%;
+				padding: 0 10px;
 			}
 			.text-solo{
 				font-size: 14px;
