@@ -1,0 +1,15 @@
+{% for article in article %}
+<div class="col-md-6 col-sm-6 mb">
+	<li class="article white-panel pn donut-chart">'+
+		<div class="white-header">
+			<h3><a href="{{ path('splj.window.article', {id: article.id}) }}">{{ article.title }}</a></h3>
+		</div>
+		<div class="text-left">
+			<div class="infos">
+				<span>publié le</span><date>{{ article.date }}</date>
+			</div>
+		</div>
+		<div class="text-solo">{{ article.extract }}<a href="{{ path('splj.window.article', {id: article.id}) }}">...Lire la suite</a></div>
+	</li>
+</div>
+{% endfor %}

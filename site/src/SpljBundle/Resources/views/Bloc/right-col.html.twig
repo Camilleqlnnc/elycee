@@ -8,7 +8,7 @@
 				<span class="badge bg-theme"><i class="fa fa-file-text"></i></span>
 			</div>
 			<div class="details">
-      		   	<a href="/home/article/{{ article.id }}">{{ article.title }}</a>
+      		   	<a href="{{ path('splj.window.article', {id: article.id}) }}">{{ article.title }}</a>
           		<p><span>publié le </span><date>{{ article.date|date('d/m/Y') }}</date></p>
           	</div>
 		</div>

@@ -10,14 +10,14 @@
 			<div class="col-md-6 col-sm-6 mb">
 				<li class="article white-panel pn donut-chart">
 					<div class="white-header">
-						<h3><a href="/home/article/{{ article.id }}">{{ article.title }}</a></h3>
+						<h3><a href="{{ path('splj.window.article', {id: article.id}) }}">{{ article.title }}</a></h3>
 					</div>
 					<div class="text-left">
 						<div class="infos">
 							<span>publié le </span><date>{{ article.date|date('d/m/Y') }}</date><span> - par <span>{{ article.username }}</span></span>
 						</div>
 						<figure class="text-center">
-							<a href="/home/article/{{ article.id }}">
+							<a href="{{ path('splj.window.article', {id: article.id}) }}">
 								{% if article.image != null%}
 									<img src="{{ asset('bundles/splj/img/articles/'~ article.image)}}">
 								{% else %}
@@ -25,7 +25,7 @@
 								{% endif %}
 							</a>
 						</figure>
-						<div>{{ article.extract }}<a href="/home/article/{{ article.id }}">...Lire la suite</a></div>
+						<div>{{ article.extract }}<a href="{{ path('splj.window.article', {id: article.id}) }}">...Lire la suite</a></div>
 					</div>
 				</li>
 			</div>

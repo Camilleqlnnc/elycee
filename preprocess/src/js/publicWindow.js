@@ -72,17 +72,7 @@ define('publicWindow', function(){
 			            $('.loading').addClass('off').removeClass('on');
 		            	if (data.length !== 0) {
 			            	$('.wrap-list').empty();
-			            	$.each(data, function(key,value){
-			            		$('.wrap-list').append('<div class="col-md-6 col-sm-6 mb">'+
-			            			'<li class="article white-panel pn donut-chart">'+
-			            				'<div class="white-header">'+
-			            				'<h3><a href="/home/article/'+value.id+'">'+value.title+'</a></h3>'+
-			            				'</div>'+
-			            				'<div class="text-left"><div class="infos"><span>publié le </span>'+
-			            				'<date>'+value.date+'</date></span></div>'+
-			            				'<div class="text-solo">'+value.extract+'<a href="/home/article/'+value.id+'">...Lire la suite</a></div>'+
-			            			'</li></div>');
-						    });  
+			            	$('.wrap-list').html(data);
 		            	}else{
 			            	$('.wrap-list').empty();
 		            		$('.wrap-list').append('<p>Aucun article correspondant</p>');

@@ -90,11 +90,6 @@ define("dashboard", function() {
             if (body.hasClass("dashboard")) {
                 $(".public-menu").remove();
             }
-            if (body.hasClass("dashboard")) {
-                $(".wrap-logo img").attr("src", "/bundles/splj/img/logo_60_grey.jpg");
-                $("#main-content .col-lg-3").remove();
-                $("#main-content .col-lg-9").removeClass().addClass("col-lg-12 main-chart");
-            }
             if (body.hasClass("qcm")) {
                 $(".dash-menu").eq(1).find("a").addClass("active");
             } else if (body.hasClass("article")) {
@@ -218,9 +213,7 @@ define("publicWindow", function() {
                         $(".loading").addClass("off").removeClass("on");
                         if (data.length !== 0) {
                             $(".wrap-list").empty();
-                            $.each(data, function(key, value) {
-                                $(".wrap-list").append('<div class="col-md-6 col-sm-6 mb">' + '<li class="article white-panel pn donut-chart">' + '<div class="white-header">' + '<h3><a href="/home/article/' + value.id + '">' + value.title + "</a></h3>" + "</div>" + '<div class="text-left"><div class="infos"><span>publié le </span>' + "<date>" + value.date + "</date></span></div>" + '<div class="text-solo">' + value.extract + '<a href="/home/article/' + value.id + '">...Lire la suite</a></div>' + "</li></div>");
-                            });
+                            $(".wrap-list").html(data);
                         } else {
                             $(".wrap-list").empty();
                             $(".wrap-list").append("<p>Aucun article correspondant</p>");

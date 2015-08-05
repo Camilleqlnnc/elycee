@@ -138,7 +138,7 @@ class ArticleController extends Controller
     /**
     * @Route(
     *   "/update-status/{id}",
-    *   name="splj.dashTeacher.update-status",
+    *   name="splj.dashTeacher.update-status-article",
     * )
     * 
     */

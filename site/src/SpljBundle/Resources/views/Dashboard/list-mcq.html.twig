@@ -26,7 +26,7 @@
             {% if mcq.status == 1 and is_granted('ROLE_STUDENT') or is_granted('ROLE_TEACHER')  %}
             <tr>
                 {% if is_granted('ROLE_TEACHER') and app.session.get('user').id == mcq.userId %}
-                    <td><a href="/dashteacher/update-mcq/{{ mcq.id }}">{{ mcq.title }}</a></td>
+                    <td><a href="{{ path('splj.dashTeacher.update-status-mcq', {id: mcq.id}) }}">{{ mcq.title }}</a></td>
                 {% else %}
                     <td>{{ mcq.title }}</td>
                 {% endif %}
@@ -83,7 +83,7 @@
                     {% endfor %}
                     {% if qcmRepondu == false %}
                         <td>
-                            <button class="btn btn-info btn-xs"><a href="/dashstudent/student-answer/{{ user.id }}/{{ mcq.id }}"><i class="fa fa-play"></i></a></button>
+                            <button class="btn btn-info btn-xs"><a href="{{ path('splj.dashStudent.answer-mcq', {userId: user.id, mcqId: mcq.id }) }}"><i class="fa fa-play"></i></a></button>
                         </td>
                     {% else %}
                         <td>score : {{ qcmScore }}/{{ qcmScoreMax }} | Le : {{ qcmScoreDate }}</td>

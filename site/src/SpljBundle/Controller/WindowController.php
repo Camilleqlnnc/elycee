@@ -208,7 +208,8 @@ class WindowController extends Controller
                 $article[$i]->setDate($newDate);
             }
 
-            return new JsonResponse($article);
+            $render = $this->render('SpljBundle:Bloc:resultSearch.html.twig', array('article' => $article));
+            return $render;
 
         }
         return array();
