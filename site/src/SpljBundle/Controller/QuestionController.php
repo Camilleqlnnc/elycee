@@ -66,8 +66,8 @@ class QuestionController extends Controller
         }
 
         return $this->render('SpljBundle:DashTeacher:form-question.html.twig', array(
-            'form' => $form->createView(),
-            'mcqCurrent' => $mcqCurrent
+            'mcqCurrent' => $mcqCurrent,
+            'form' => $form->createView()
         ));
     }
 

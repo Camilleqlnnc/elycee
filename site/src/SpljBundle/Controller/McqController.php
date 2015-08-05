@@ -45,7 +45,10 @@ class McqController extends Controller
         if($form->isValid() && $form->isSubmitted()){
             $this->onSubmit($form,$entity);
 
-            return $this->redirect('/dashteacher/add-question/'.$entity->getId());
+            return $this->redirect($this->generateUrl('splj.dashTeacher.add-question',
+                array('id' => $entity->getId()))
+            );
+            // return $this->redirect('/dashteacher/add-question/'.$entity->getId());
         }
         return array(
             'form' => $form->createView()
