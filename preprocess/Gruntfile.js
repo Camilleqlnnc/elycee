@@ -174,7 +174,7 @@ module.exports = function(grunt) {
     // Tasks
     grunt.registerTask('prod_compile', ["jshint", "bower_concat:prod", "uglify:prod", "sass:prod"]);
     grunt.registerTask('dev_compile', ["jshint", "bower_concat:dev", "uglify:dev", "sass:dev"]);
-    grunt.registerTask('watching', ["dev_compile", "watch"]);
+    grunt.registerTask('watching', ["prod_compile", "watch"]);
     grunt.registerTask('test', ["jshint", "bower_concat:dev", "uglify:dev", "mocha", "watch"]);
     grunt.registerTask('docs', ["doxx"]);
     grunt.registerTask('default', ["watching"]);

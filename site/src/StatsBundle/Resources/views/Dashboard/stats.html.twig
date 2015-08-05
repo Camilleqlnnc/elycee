@@ -104,34 +104,38 @@
   				<li><span>{{  stats.coefMcqStudent * loop.revindex0 }}</span></li>
   				{% endfor %}
   			</ul>
-  			{% for student in stats.StudentArray %}
-  			<div class="bar">
-  				<div class="title">{{ student.username }}</div>
-  				<div class="value tooltips" data-original-title="{{ student.mcqs }}" data-toggle="tooltip" data-placement="top">{{ student.mcqs/(stats.coefMcqStudent*5)*100 }}%</div>
-  			</div>
-  			{% endfor %}
-  		</div>
-  	</div>
-  	  	</div>
-  	  	<div class="mt">
-  		<div class="border-head">
-  			<h3>Score total/ score max</h3>
-  		</div>
-  		<div class="custom-bar-chart score">
-  			<ul class="y-axis">
-  				{% for i in 0..5 %}
-  				<li><span>{{  stats.coefScore * loop.revindex0 }}</span></li>
-  				{% endfor %}
-  			</ul>
-  			{% for student in stats.StudentArray %}
-  			<div class="bar">
-  				<div class="title">{{ student.username }}</div>
-  				<div class="value tooltips" data-original-title="{{ student.scoreMax }}" data-toggle="tooltip" data-placement="top">{{ student.scoreMax/(stats.coefScore*5)*100 }}%</div>
-  			</div>
-  			<div class="bar">
-  				<div class="value tooltips" data-original-title="{{ student.score }}" data-toggle="tooltip" data-placement="top">{{ student.score/(stats.coefScore*5)*100 }}%</div>
-  			</div>
-  			{% endfor %}
+        {% if stats.coefMcqStudent > 0 %}
+    			{% for student in stats.StudentArray %}
+    			<div class="bar">
+    				<div class="title">{{ student.username }}</div>
+    				<div class="value tooltips" data-original-title="{{ student.mcqs }}" data-toggle="tooltip" data-placement="top">{{ student.mcqs/(stats.coefMcqStudent*5)*100 }}%</div>
+    			</div>
+    			{% endfor %}
+        {% endif %}
+      </div>
+    </div>
+        </div>
+        <div class="mt">
+      <div class="border-head">
+        <h3>Score total/ score max</h3>
+      </div>
+      <div class="custom-bar-chart score">
+        <ul class="y-axis">
+          {% for i in 0..5 %}
+          <li><span>{{  stats.coefScore * loop.revindex0 }}</span></li>
+          {% endfor %}
+        </ul>
+        {% if stats.coefScore > 0 %}
+        {% for student in stats.StudentArray %}
+        <div class="bar">
+          <div class="title">{{ student.username }}</div>
+          <div class="value tooltips" data-original-title="{{ student.scoreMax }}" data-toggle="tooltip" data-placement="top">{{ student.scoreMax/(stats.coefScore*5)*100 }}%</div>
+        </div>
+        <div class="bar">
+          <div class="value tooltips" data-original-title="{{ student.score }}" data-toggle="tooltip" data-placement="top">{{ student.score/(stats.coefScore*5)*100 }}%</div>
+        </div>
+        {% endfor %}
+        {% endif %}
   		</div>
   	</div>
 {% endblock %}

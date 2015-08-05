@@ -26,7 +26,7 @@
             {% if mcq.status == 1 and is_granted('ROLE_STUDENT') or is_granted('ROLE_TEACHER')  %}
             <tr>
                 {% if is_granted('ROLE_TEACHER') and app.session.get('user').id == mcq.userId %}
-                    <td><a href="{{ path('splj.dashTeacher.update-status-mcq', {id: mcq.id}) }}">{{ mcq.title }}</a></td>
+                    <td><a href="{{ path('splj.dashTeacher.update-mcq', {id: mcq.id}) }}">{{ mcq.title }}</a></td>
                 {% else %}
                     <td>{{ mcq.title }}</td>
                 {% endif %}
@@ -36,7 +36,7 @@
                 {% if is_granted('ROLE_TEACHER') %}
                 <td>
                     {% if app.session.get('user').id == mcq.userId %}
-                    <form action="/dashteacher/update-status-mcq/{{ mcq.id }}" method="POST" novalidate>
+                    <form action="{{ path('splj.dashTeacher.update-status-mcq', {id: mcq.id}) }}" method="POST" novalidate>
                             <select name="status">
                             {% if mcq.status == 0 %}
                                 <option selected="selected" value="0">non publié</option>
