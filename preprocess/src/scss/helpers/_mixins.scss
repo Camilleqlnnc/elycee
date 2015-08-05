@@ -74,7 +74,7 @@
 }
 
 @mixin bg-sprite($url, $position, $bgsize){
-    background-image: url('../images/' + $url + '.png');
+    background-image: url('sprite/' + $url + '.jpg');
     background-repeat: no-repeat;
     background-position: $position;
 
@@ -83,10 +83,10 @@
                       (min--moz-device-pixel-ratio: 2),    /* Anciens navigateurs Firefox (avant Firefox 16) */
                       (min-resolution: 2dppx),             /* La méthode standard */
                       (min-resolution: 192dpi){
-        .no-ie &{
-            background-image: url('../images/' + $url + '@2x.png');
+        
+            background-image: url('sprite/' + $url + '@2x.jpg');
             background-size: $bgsize + px;
-        }
+        
     }
 }
 @mixin transition($property, $duration, $timing-function, $delay){

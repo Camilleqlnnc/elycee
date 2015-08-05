@@ -9472,9 +9472,37 @@ form {
   /* line 24, src/scss/_common.scss */
   .wrap-logo a.logo {
     font-size: 28px;
-    margin-top: 15px; }
+    margin-top: 15px;
+    position: relative;
+    height: 45px;
+    display: inline-block; }
+    /* line 30, src/scss/_common.scss */
+    .wrap-logo a.logo span.logo {
+      background-image: url("sprite/logo_60.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: -14px;
+      left: -75px; }
+      @media screen and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+        /* line 30, src/scss/_common.scss */
+        .wrap-logo a.logo span.logo {
+          background-image: url("sprite/logo_60@2x.jpg");
+          background-size: 60px; } }
+      /* line 37, src/scss/_common.scss */
+      .dashboard .wrap-logo a.logo span.logo {
+        background-image: url("sprite/logo_60_grey.jpg");
+        background-repeat: no-repeat;
+        background-position: center; }
+        @media screen and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+          /* line 37, src/scss/_common.scss */
+          .dashboard .wrap-logo a.logo span.logo {
+            background-image: url("sprite/logo_60_grey@2x.jpg");
+            background-size: 60px; } }
 
-/* line 29, src/scss/_common.scss */
+/* line 43, src/scss/_common.scss */
 .top-menu {
   display: inline-block;
   position: absolute;
@@ -9482,20 +9510,20 @@ form {
   top: 4px;
   min-width: 30%;
   text-align: right; }
-  /* line 36, src/scss/_common.scss */
+  /* line 50, src/scss/_common.scss */
   .top-menu p.username {
     margin-top: 4px;
     color: #fff; }
-  /* line 40, src/scss/_common.scss */
+  /* line 54, src/scss/_common.scss */
   .top-menu i.fa {
     font-size: 21px;
     color: #fff; }
 
-/* line 45, src/scss/_common.scss */
+/* line 59, src/scss/_common.scss */
 .bottom-form {
   display: none; }
 
-/* line 49, src/scss/_common.scss */
+/* line 63, src/scss/_common.scss */
 .main-chart p {
   color: #666666;
   font-size: 13px;
@@ -9503,57 +9531,57 @@ form {
   max-width: 70%;
   margin: 0 auto;
   line-height: 22px; }
-/* line 58, src/scss/_common.scss */
+/* line 72, src/scss/_common.scss */
 .main-chart a.add span {
   padding-left: 6px; }
-/* line 62, src/scss/_common.scss */
+/* line 76, src/scss/_common.scss */
 .main-chart a:hover {
   color: #666666; }
-/* line 65, src/scss/_common.scss */
+/* line 79, src/scss/_common.scss */
 .main-chart .btn a {
   color: #fff; }
 
-/* line 69, src/scss/_common.scss */
+/* line 83, src/scss/_common.scss */
 p.error {
   color: crimson;
   padding: 5px 3px;
   position: absolute;
   bottom: -20px; }
-  /* line 74, src/scss/_common.scss */
+  /* line 88, src/scss/_common.scss */
   p.error li {
     font-size: 11px; }
 
-/* line 78, src/scss/_common.scss */
+/* line 92, src/scss/_common.scss */
 .error-js {
   position: absolute;
   width: 100%;
   left: 0;
   top: 10px; }
-  /* line 83, src/scss/_common.scss */
+  /* line 97, src/scss/_common.scss */
   .error-js p.error {
     width: 100%;
     color: crimson;
     position: relative; }
 
-/* line 92, src/scss/_common.scss */
+/* line 106, src/scss/_common.scss */
 input.error,
 select.error,
 textarea.error {
   border-color: crimson; }
 
-/* line 96, src/scss/_common.scss */
+/* line 110, src/scss/_common.scss */
 .twitter {
   text-align: center; }
 
-/* line 99, src/scss/_common.scss */
+/* line 113, src/scss/_common.scss */
 .timeline {
   max-width: 100% !important; }
 
-/* line 102, src/scss/_common.scss */
+/* line 116, src/scss/_common.scss */
 .timeline-header {
   display: none !important; }
 
-/* line 105, src/scss/_common.scss */
+/* line 119, src/scss/_common.scss */
 .loading {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
@@ -9563,7 +9591,7 @@ textarea.error {
   left: 50%;
   -webkit-transition: opacity 0.6s ease-out 0s;
   transition: opacity 0.6s ease-out 0s; }
-  /* line 112, src/scss/_common.scss */
+  /* line 126, src/scss/_common.scss */
   .loading i {
     font-size: 50px;
     color: #666666;
@@ -9571,7 +9599,7 @@ textarea.error {
     top: 50%;
     left: 50%;
     margin: -25px 0 0 -25px; }
-  /* line 120, src/scss/_common.scss */
+  /* line 134, src/scss/_common.scss */
   .loading.on {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
@@ -9579,7 +9607,7 @@ textarea.error {
     z-index: 1;
     -webkit-transition: opacity 0.6s ease-out 0s;
     transition: opacity 0.6s ease-out 0s; }
-  /* line 126, src/scss/_common.scss */
+  /* line 140, src/scss/_common.scss */
   .loading.off {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
@@ -9589,21 +9617,21 @@ textarea.error {
     transition: opacity 0.6s ease-out 0s; }
 
 @media screen and (max-width: 640px) {
-  /* line 135, src/scss/_common.scss */
+  /* line 149, src/scss/_common.scss */
   .main-chart p {
     max-width: 100%; }
 
-  /* line 139, src/scss/_common.scss */
+  /* line 153, src/scss/_common.scss */
   .wrap-logo {
     width: 80%; }
-    /* line 141, src/scss/_common.scss */
+    /* line 155, src/scss/_common.scss */
     .wrap-logo b {
       display: none; }
-    /* line 144, src/scss/_common.scss */
+    /* line 158, src/scss/_common.scss */
     .wrap-logo strong {
       display: none; }
 
-  /* line 149, src/scss/_common.scss */
+  /* line 163, src/scss/_common.scss */
   .top-menu p.username {
     display: none; } }
 /*

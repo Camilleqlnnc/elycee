@@ -23,10 +23,11 @@
             </div>
             <div class="wrap-logo">
                 <a href="{{ url('splj.window.index')}}" class="logo">
+                    <span class="logo"></span>
                     {% if app.request.attributes.get('_route') starts with 'splj.window' %}
-                    <img src="{{ asset('bundles/splj/img/logo_60.jpg')}}" width="60">
+                    <!-- <img src="{{ asset('bundles/splj/img/logo_60.jpg')}}" width="60"> -->
                     {% else %}
-                    <img src="{{ asset('bundles/splj/img/logo_60_grey.jpg')}}" width="60">
+                    <!-- <img src="{{ asset('bundles/splj/img/logo_60_grey.jpg')}}" width="60"> -->
                     {% endif %}
                 <strong>Collège - Lycée Saint-Paul-le-Jeune</strong>
                 </a>
