@@ -16,7 +16,7 @@ use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * @Route("/home")
+ * @Route("/")
  */
 
 class WindowController extends Controller
@@ -44,7 +44,7 @@ class WindowController extends Controller
         $article = $query->getResult();
         
         // username list
-        $query = $em->createQuery('SELECT a.id, u.username FROM SpljBundle:Article a, UserBundle:User u WHERE a.userId = u.id ORDER BY a.id ASC');
+        $query = $em->createQuery('SELECT a.id, u.username FROM SpljBundle:Article a, UserBundle:User u WHERE a.userId = u.id ORDER BY a.date DESC');
         $users = $query->getResult();
 
         for ($i=0; $i < sizeof($article); $i++) { 

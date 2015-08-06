@@ -874,7 +874,7 @@ ul.top-menu > li > a {
 
 .custom-bar-chart .bar .value {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     background: $grey-light;
     color: $blue;
     .dashboard & {
