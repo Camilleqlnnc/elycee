@@ -7,17 +7,37 @@ Bootstrap based on https://github.com/esironal/dashgum-template
 # Kitstarter Front
 https://github.com/mazgithub/maz-grunt-kitstarter
 
-#Bundle Symfony
+#Déploiement
+
+1.Bundle Symfony
+
+composer update
+
 FOSUser : https://github.com/FriendsOfSymfony/FOSUserBundle
 
 FOSJsRouting : https://github.com/FriendsOfSymfony/FOSJsRoutingBundle
 
-#Plugin Front
-jQuery Validate Form @author Clément Caillard
+2. Update app/config/parameters.yml
 
-jQuery UI datePicker
+3. SwiftMailer : update app/config/config.yml
 
-jQuery confirm https://github.com/myclabs/jquery.confirm
+4. /preprocess
+
+npm start
+
+5. /site
+
+php app/console doctrine:schema:update --force
+
+php app/console server:run
+
+php app/console fos:user:create + update roles
+
+
+
+
+
+
 
 
 
