@@ -4,12 +4,18 @@ final school project | Public blog and dashboard MCQ test
 Symfony 2.7
 
 Bootstrap based on https://github.com/esironal/dashgum-template
-# Kitstarter Front
+
+# Kitstarter Front / Dependencies 
+
 https://github.com/mazgithub/maz-grunt-kitstarter
+
+requireJs 2.1
+
+jQuery 1.11
 
 #Déploiement
 
-1.Bundle Symfony
+1. Bundle Symfony
 
 composer update
 
@@ -21,9 +27,7 @@ FOSJsRouting : https://github.com/FriendsOfSymfony/FOSJsRoutingBundle
 
 3. SwiftMailer : update app/config/config.yml
 
-4. /preprocess
-
-npm start
+4. /preprocess npm start
 
 5. /site
 
