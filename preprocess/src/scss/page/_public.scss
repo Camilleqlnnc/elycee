@@ -13,6 +13,7 @@
 				width: 40%;
 				a{
 					display: block;
+					padding-left: 8px;
 				}
 				img{
 					max-height: 150px;
@@ -57,9 +58,6 @@
 		.comments{
 			text-align: right;
 			padding: 4px;
-		}
-		.wrap-img{
-			padding: 10px 0;
 		}
 	}
 	&.estate{

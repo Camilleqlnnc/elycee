@@ -88,7 +88,7 @@ define('publicWindow', function(){
 
 		articleStyle: function articleStyle(){
 			var paragraph = $('.paragraph');
-  			paragraph.html(paragraph.html().replace(/BR/ig, '<br>'));
+  			paragraph.html(paragraph.html().replace(/JUMP/ig, '<br>'));
 		}
 	};
 	return publicWindow;

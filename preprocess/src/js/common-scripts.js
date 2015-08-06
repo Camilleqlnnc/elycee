@@ -42,9 +42,9 @@ var Script = function () {
         }
     });
 
-    $("#sidebar").niceScroll({styler:"fb",cursorcolor:"#9966FF", cursorwidth: '2', cursorborderradius: '10px', background: '#666666', spacebarenabled:false, cursorborder: ''});
+    $("#sidebar").niceScroll({styler:"fb",cursorcolor:"#F28963", cursorwidth: '2', cursorborderradius: '10px', background: '#035385', spacebarenabled:false, cursorborder: ''});
 
-    $("html").niceScroll({styler:"fb",cursorcolor:"#9966FF", cursorwidth: '4', cursorborderradius: '10px', background: '#666666', spacebarenabled:false,  cursorborder: '', zindex: '1000'});
+    $("html").niceScroll({styler:"fb",cursorcolor:"#F28963", cursorwidth: '4', cursorborderradius: '10px', background: '#035385', spacebarenabled:false,  cursorborder: '', zindex: '1000'});
 
     jQuery('.panel .tools .fa-chevron-down').click(function () {
         var el = jQuery(this).parents(".panel").children(".panel-body");

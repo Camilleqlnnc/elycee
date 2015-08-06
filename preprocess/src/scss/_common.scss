@@ -1,7 +1,7 @@
-$grey-light: #CCCCCC;
-$blue: #9966FF;
-$grey-dark: #666666;
-$pink: #FFE2C9;
+$grey-light: #F28963;
+$blue: #035385;
+$grey-dark: #035385;
+$pink: #F28963;
 h1{
 	font-size: 22px;
 	padding: 10px 0;
@@ -14,7 +14,7 @@ form{
 }
 .wrap-logo{
 	display: inline-block;
-	padding: 12px 0;
+	padding: 20px 0;
 	text-align: center;
 	width: 90%;
 	strong,img{
@@ -23,16 +23,14 @@ form{
 	}
 	a.logo {
 		font-size: 28px;
-	    margin-top: 15px;
 		position: relative;
-		height: 42px;
 		display: inline-block;
 	    span.logo{
 		    @include bg-sprite(logo_60,center,60);
 		    width: 60px;
 		    height: 60px;
 			position: absolute;
-			top: -16px;
+			top: -10px;
 			left: -75px;
 			.dashboard &{
 		    	@include bg-sprite(logo_60_grey,center,60);

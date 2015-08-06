@@ -11,11 +11,9 @@ Premium: http://www.gridgum.com
 
 /* BASIC THEME CONFIGURATION */
 body {
-    color: #797979;
     font-family: 'Ruda', sans-serif;
     padding: 0px !important;
     margin: 0px !important;
-    font-size:13px;
 }
 
 ul li {
@@ -27,22 +25,12 @@ a, a:hover, a:focus {
     outline: none;
 }
 ::selection {
-    background: $blue;
-    .dashboard & {
-
-    background: $blue;
-    }
-    .dashboard &{
-        background: $grey-light;
-    }
+    background: $pink;
     color: #fff;
 }
 ::-moz-selection {
-    background: $blue;
+    background: $pink;
     color: #fff;
-    .dashboard &{
-        background: $grey-light;
-    }
 }
 
 #container {
@@ -126,7 +114,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #797979;
+  border-top: 1px solid $grey-dark;
 }
 
 
@@ -295,7 +283,7 @@ ul.sidebar-menu li a span{
 }
 
 ul.sidebar-menu li a{
-    color: rgb(121,121,121);
+    color: $grey-dark;
     text-decoration: none;
     display: block;
     padding: 15px 0 15px 10px;
@@ -677,6 +665,7 @@ ul.top-menu > li > a {
 .sidebar-toggle-box .fa-bars {
     cursor: pointer;
     display: inline-block;
+    color: #fff;
     font-size: 21px;
 }
 
@@ -711,7 +700,7 @@ ul.top-menu > li > a {
 	font-size: 16px;
 	padding: 0 10px;
 	line-height: 60px;
-	height: 60px;
+	height: 52px;
 	margin: 0;
 	background: $blue;
 	text-align: center;
@@ -1603,7 +1592,7 @@ PANELS CONFIGURATIONS
 }
 .panel.terques-chart {
     background: transparent;
-    color: #797979;
+    color: $grey-dark;
 }
 .panel.terques-chart .chart-tittle .value {
     float: right;
@@ -2123,7 +2112,7 @@ label {
     padding: 14px 15px;
     text-align: center;
     border-right: 1px solid #d5d8df;
-    color: #797979;
+    color: $grey-dark;
 }
 
 .panel-footer.revenue-foot ul li a:hover, .panel-footer.revenue-foot ul li.active a {

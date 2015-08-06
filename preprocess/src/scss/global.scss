@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
-@import "theme/bootstrap";
-@import "theme/font-awesome";
-@import "theme/style-responsive";
-
 @import "helpers/reset";
 @import "helpers/mixins";
 @import "common";
-@import "theme";
+
+@import "theme/bootstrap";
+@import "theme/font-awesome";
+@import "theme/style-responsive";
+@import "theme/theme";
 
 @import "page/public";
 @import "page/dashboard";
