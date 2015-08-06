@@ -17,12 +17,6 @@ jQuery 1.11
 
 1. Bundle Symfony
 
-composer update
-
-FOSUser : https://github.com/FriendsOfSymfony/FOSUserBundle
-
-FOSJsRouting : https://github.com/FriendsOfSymfony/FOSJsRoutingBundle
-
 2. Update app/config/parameters.yml
 
 3. SwiftMailer : update app/config/config.yml
