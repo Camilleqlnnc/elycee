@@ -13,9 +13,16 @@ requireJs 2.1
 
 jQuery 1.11
 
+#Bundle Symfony 
+
+FOSUser : https://github.com/FriendsOfSymfony/FOSUserBundle
+
+FOSJsRouting : https://github.com/FriendsOfSymfony/FOSJsRoutingBundle
+
+
 #Déploiement
 
-1. Bundle Symfony
+1. /site composer update
 
 2. Update app/config/parameters.yml
 
