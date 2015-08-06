@@ -28,7 +28,7 @@
                 </a>
             </div>
             <div class="top-menu">
-                <ul class="nav pull-right top-menu">
+                <ul class="nav top-menu">
                 {% if is_granted('ROLE_STUDENT') or is_granted('ROLE_TEACHER') %}
                     <li><a class="btn-square " href="{{  path('fos_user_security_logout')  }}"><i class="fa fa-sign-out tooltips" data-placement="left" data-original-title="déconnexion"></i></a></li>
                     <li><p class="username">Bonjour {{ app.session.get('user').username }} !</p></li>

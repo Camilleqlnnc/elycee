@@ -124,6 +124,11 @@ select {
   text-transform: none;
   padding: 3px 4px;
 }
+@media screen and(min-width: 640px){
+  select{
+    padding: 4px 0;
+  }
+}
 button,
 html input[type="button"],
 input[type="reset"],
@@ -1334,9 +1339,9 @@ th {
   margin-bottom: 20px;
 }
 .table > thead > tr > th,
-.table > tbody > tr > th,
 .table > tfoot > tr > th,
 .table > thead > tr > td,
+.table > tbody > tr > th,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
   height: 45px;
@@ -1344,6 +1349,15 @@ th {
   line-height: 1.42857143;
   vertical-align: middle;
   border-top: 1px solid #ccc;
+}
+@media screen and(max-width: 640px){
+  .table > thead > tr > th,
+  .table > tfoot > tr > th,
+  .table > thead > tr > td,
+  .table > tfoot > tr > td{
+    padding: 11px 0;
+    text-align: center;
+  }
 }
 .table > thead > tr > th {
   vertical-align: bottom;

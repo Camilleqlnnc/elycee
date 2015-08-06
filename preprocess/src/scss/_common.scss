@@ -42,11 +42,11 @@ form{
 	display: inline-block;
 	position: absolute;
 	right: 5px;
-	top: 4px;
+	top: 0;
 	min-width: 30%;
 	text-align: right;
 	p.username{
-		margin-top: 4px;
+		margin: 0;
 		color: #fff;
 	}
 	i.fa{
@@ -150,6 +150,7 @@ textarea{
 	}
 	.wrap-logo{
 		width: 80%;
+		padding: 30px 0;
 		b{
 	    	display: none;
 		}
@@ -160,6 +161,7 @@ textarea{
 			span.logo{
 				left: 50%;
 				margin-left: -42px;
+				top: -34px;
 			}
 		}
 	}

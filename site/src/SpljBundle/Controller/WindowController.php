@@ -230,6 +230,12 @@ class WindowController extends Controller
         $doctrine = $this->getDoctrine();
         $em = $doctrine->getManager();
         $theArticle = $em->getRepository('SpljBundle:Article')->find($id);
+        $userId = $theArticle->getUserId();
+
+        $query = $em->createQuery('SELECT u.username FROM UserBundle:User u WHERE u.id ='.$userId.'');
+        $user = $query->getSingleResult();
+
+        $theArticle->setUserName($user);
 
         return array(
             'theArticle' => $theArticle

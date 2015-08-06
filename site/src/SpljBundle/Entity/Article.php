@@ -66,7 +66,7 @@ class Article
      /**
     * @var string
     */
-    private $username;
+    public $username;
 
     public function getAbsolutePath()
     {
